@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UPS2">
         <activity
+            android:name=".EducationActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
