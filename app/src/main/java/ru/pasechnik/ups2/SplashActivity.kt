@@ -45,6 +45,16 @@ class SplashActivity : AppCompatActivity() {
             }
             override fun onAnimationCancel(animation: Animator) {}
             override fun onAnimationRepeat(animation: Animator) {
+                if(first){
+                    val sp = getSharedPreferences("isFirst", Context.MODE_PRIVATE)
+                    val edit = sp.edit()
+                    edit.putBoolean("first", false)
+                    startActivity(Intent(this@SplashActivity, EducationActivity::class.java))
+                    finish()
+                }else{
+                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    finish()
+                }
 
             }
         })

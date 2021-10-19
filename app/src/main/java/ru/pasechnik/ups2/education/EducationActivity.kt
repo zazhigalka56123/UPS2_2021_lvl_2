@@ -1,10 +1,11 @@
-package ru.pasechnik.ups2
+package ru.pasechnik.ups2.education
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import com.rd.PageIndicatorView
 import com.rd.animation.type.AnimationType
+import ru.pasechnik.ups2.R
 
 class EducationActivity : AppCompatActivity() {
 

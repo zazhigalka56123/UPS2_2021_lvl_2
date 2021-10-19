@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_education.xml" value="0.18" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_1.xml" value="0.31666666666666665" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_2.xml" value="0.31666666666666665" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_3.xml" value="0.31666666666666665" />
       </map>
     </option>
   </component>
