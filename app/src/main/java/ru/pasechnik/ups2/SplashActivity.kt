@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Gravity.apply
 import com.airbnb.lottie.LottieAnimationView
+import ru.pasechnik.ups2.education.EducationActivity
 import kotlin.random.Random
 
 class SplashActivity : AppCompatActivity() {
@@ -36,6 +37,7 @@ class SplashActivity : AppCompatActivity() {
                     val sp = getSharedPreferences("isFirst", Context.MODE_PRIVATE)
                     val edit = sp.edit()
                     edit.putBoolean("first", false)
+                    edit.apply()
                     startActivity(Intent(this@SplashActivity, EducationActivity::class.java))
                     finish()
                 }else{

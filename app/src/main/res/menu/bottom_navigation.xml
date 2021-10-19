@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/orders"
+        android:id="@+id/mainOrders"
         android:title="Заказы"
         android:icon="@drawable/ic_order"/>
     <item
-        android:id="@+id/cleaners"
+        android:id="@+id/mainCleaners"
         android:title="Клинеры"
         android:icon="@drawable/ic_cleaners"/>
     <item
-        android:id="@+id/bonuses"
+        android:id="@+id/mainBonuses"
         android:title="Бонусы"
         android:icon="@drawable/ic_bonuses"/>
     <item
-        android:id="@+id/help"
+        android:id="@+id/mainHelp"
         android:title="Помощь"
         android:icon="@drawable/ic_help"/>
 </menu>

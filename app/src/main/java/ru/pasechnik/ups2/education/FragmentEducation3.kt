@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
+import ru.pasechnik.ups2.MainActivity
+import ru.pasechnik.ups2.R
 
 class FragmentEducation3: Fragment() {
     private lateinit var root: View

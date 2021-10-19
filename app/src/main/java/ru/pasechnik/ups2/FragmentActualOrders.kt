@@ -5,27 +5,35 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
+import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.google.android.material.button.MaterialButton
 
-class FragmentEducation3: Fragment() {
+class FragmentActualOrders: Fragment() {
+
     private lateinit var root: View
+
+    private lateinit var btnGetCleaning: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        root = inflater.inflate(R.layout.fragment_education_3, container, false)
+        root = inflater.inflate(R.layout.fragment_orders, container, false)
 
-        val btn = root.findViewById<ImageButton>(R.id.btn_next_educ_3)
 
-        btn.setOnClickListener {
-            startActivity(Intent(it.context, MainActivity::class.java))
-            activity?.finish()
+        btnGetCleaning = root.findViewById(R.id.getCleaning)
+
+
+        btnGetCleaning.setOnClickListener{
+            startActivity(Intent(root.context, GetCleaningActivity::class.java))
         }
+
+
 
         return root
     }
+
+
+
 }
