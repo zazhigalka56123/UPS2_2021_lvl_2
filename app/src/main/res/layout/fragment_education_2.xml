@@ -51,7 +51,7 @@
         android:id="@+id/btn_next_educ_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00FFF"
+        android:background="#00FFFFFF"
         android:src="@drawable/ic_btn_education_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
