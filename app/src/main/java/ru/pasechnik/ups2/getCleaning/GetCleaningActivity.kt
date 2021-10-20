@@ -1,4 +1,4 @@
-package ru.pasechnik.ups2
+package ru.pasechnik.ups2.getCleaning
 
 import android.content.Intent
 import android.os.Build
@@ -8,8 +8,10 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.cardview.widget.CardView
 import com.google.android.material.card.MaterialCardView
+import ru.pasechnik.ups2.Cleaning
+import ru.pasechnik.ups2.MainActivity
+import ru.pasechnik.ups2.R
 
 class GetCleaningActivity : AppCompatActivity() {
 
@@ -58,14 +60,12 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvK1.setTextColor(getColor(R.color.activeColor))
                 if (!isPickR) {
                     editBtn(room)
-                } else {
-                    isPickR = true
                 }
+                isPickR = true
                 room = 1
 
-                if(isPickR && isPickT) {
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
-                }
             }
         }
         tvK2.setOnClickListener {
@@ -74,9 +74,8 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvK2.setTextColor(getColor(R.color.activeColor))
                 if (!isPickR) {
                     editBtn(room)
-                } else {
-                    isPickR = true
                 }
+                isPickR = true
                 room = 2
 
                 if(isPickR == isPickT)
@@ -89,12 +88,11 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvK3.setTextColor(getColor(R.color.activeColor))
                 if (!isPickR) {
                     editBtn(room)
-                } else {
-                    isPickR = true
                 }
+                isPickR = true
                 room = 3
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT != false)
                     card.visibility = View.VISIBLE
             }
         }
@@ -109,7 +107,7 @@ class GetCleaningActivity : AppCompatActivity() {
                 }
                 room = 4
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
             }
         }
@@ -121,12 +119,11 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvS1.setTextColor(getColor(R.color.activeColor))
                 if (!isPickT) {
                     editBtn2(toilet)
-                } else {
-                    isPickT = true
                 }
+                isPickT = true
                 toilet = 1
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
             }
         }
@@ -136,12 +133,11 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvS2.setTextColor(getColor(R.color.activeColor))
                 if (!isPickT) {
                     editBtn2(toilet)
-                } else {
-                    isPickT = true
                 }
+                isPickT = true
                 toilet = 2
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
             }
         }
@@ -151,12 +147,11 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvS3.setTextColor(getColor(R.color.activeColor))
                 if (!isPickT) {
                     editBtn2(toilet)
-                } else {
-                    isPickR = true
                 }
+                isPickT = true
                 toilet = 3
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
             }
         }
@@ -166,12 +161,11 @@ class GetCleaningActivity : AppCompatActivity() {
                 tvS4.setTextColor(getColor(R.color.activeColor))
                 if (!isPickT) {
                     editBtn2(toilet)
-                } else {
-                    isPickT = true
                 }
+                isPickT = true
                 toilet = 4
 
-                if(isPickR && isPickT)
+                if(isPickR == isPickT)
                     card.visibility = View.VISIBLE
             }
         }
@@ -182,7 +176,8 @@ class GetCleaningActivity : AppCompatActivity() {
         }
 
         card.setOnClickListener {
-
+            Cleaning.rooms = room
+            Cleaning.toilets = toilet
             startActivity(Intent(this, DopUslugiActivity::class.java))
             finish()
         }
