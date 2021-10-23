@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".getCleaning.AdressActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#F8F8FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnBack"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Стандартная уборка"
+                        android:textColor="#35373E"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/ic_info" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRoomsToilets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="1 Комната, 1 Санузел"
+                    android:textColor="#A4A8BC"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_appbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Выберите удобные\nдату и время"
+            android:textAlignment="center"
+            android:textColor="#35373E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Октябрь, 2021"
+            android:textAlignment="center"
+            android:textColor="#35373E"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Дата:"
+            android:textAlignment="center"
+            android:textColor="#35373E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView5">
+
+            <LinearLayout
+                android:id="@+id/ld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnD1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="25, пн"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnD2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="26, вт"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnD3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="27, ср"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnD4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="28, чт"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnD5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="29, пт"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnD6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="30, сб"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnD7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="31, вс"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Время:"
+            android:textAlignment="center"
+            android:textColor="#35373E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView6">
+
+            <LinearLayout
+                android:id="@+id/lt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnT1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="11:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnT2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="12:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnT3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="13:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnT4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="14:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnT5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="15:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnT6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="16:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/btnT7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/shape_inactive_btn_date"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="17:00"
+                    android:textAlignment="center"
+                    android:textColor="#3656F9"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardNext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#3656F9"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="ДАЛЕЕ"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

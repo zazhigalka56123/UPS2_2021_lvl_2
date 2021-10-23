@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="inactiveColor">#3656F9</color>
     <color name="activeColor">#FFFFFFFF</color>
+    <color name="colorBgYellow">#FFF2E6</color>
+    <color name="colorBgBlack">#F2F2F2</color>
+    <color name="colorBgBlue">#DFE3F6</color>
 </resources>

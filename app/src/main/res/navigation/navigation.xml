@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/mainOrders"
         android:name="ru.pasechnik.ups2.FragmentActualOrders"
-        tools:layout="@layout/fragment_orders" />
+        tools:layout="@layout/fragment_actual_orders" />
 
     <fragment
         android:id="@+id/mainCleaners"
@@ -25,6 +25,9 @@
         android:name="ru.pasechnik.ups2.FragmentHelp"
         tools:layout="@layout/fragment_help" />
 
-
+    <fragment
+        android:id="@+id/mainOrdersVypoln"
+        android:name="ru.pasechnik.ups2.FragmentVypolnOrders"
+        tools:layout="@layout/fragment_vypoln_orders" />
 
 </navigation>

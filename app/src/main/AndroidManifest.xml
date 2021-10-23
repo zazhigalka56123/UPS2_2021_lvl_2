@@ -5,10 +5,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Домклинер"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UPS2">
+        <activity
+            android:name=".getCleaning.ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".getCleaning.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".getCleaning.DataTimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".getCleaning.AdressActivity"
+            android:exported="true" />
         <activity
             android:name=".getCleaning.DopUslugiActivity"
             android:exported="true" />

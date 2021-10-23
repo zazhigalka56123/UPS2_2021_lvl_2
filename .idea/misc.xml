@@ -4,24 +4,37 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/ic_pick_black.xml" value="0.3351851851851852" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/ic_pick_blue.xml" value="0.3351851851851852" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/ic_pick_orange.xml" value="0.3351851851851852" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/selector_btn_home.xml" value="0.35555555555555557" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_active_btn.xml" value="0.3351851851851852" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_active_btn_date.xml" value="0.3770833333333333" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_btn_clean.xml" value="0.35555555555555557" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_card_result.xml" value="0.3094017094017094" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_inactive_btn.xml" value="0.3351851851851852" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_inactive_btn_date.xml" value="0.3770833333333333" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_tv.xml" value="0.3351851851851852" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_tv_black.xml" value="0.3351851851851852" />
-        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_dop_uslugi.xml" value="0.22" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/drawable/shape_tv_blue.xml" value="0.3351851851851852" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_adress.xml" value="0.25" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_data_time.xml" value="0.29615384615384616" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_dop_uslugi.xml" value="0.25" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_education.xml" value="0.18" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_get_cleaning.xml" value="0.25" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_payment.xml" value="0.29615384615384616" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_result.xml" value="0.2" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_about_home.xml" value="0.33" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_actual_orders.xml" value="0.3609375" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_bonuses.xml" value="0.25" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_cleaners.xml" value="0.3609375" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_1.xml" value="0.31666666666666665" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_2.xml" value="0.31666666666666665" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_education_3.xml" value="0.31666666666666665" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_help.xml" value="0.22" />
-        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_orders.xml" value="1.0" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_orders.xml" value="0.22" />
+        <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/layout/fragment_vypoln_orders.xml" value="0.3609375" />
         <entry key="..\:/UPS2_2021_lvl_2/app/src/main/res/menu/bottom_navigation.xml" value="0.31296296296296294" />
       </map>
     </option>
